@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper, sans]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scale=0.75]{geometry}
+\moderncvtheme[grey]{classic}
+\usepackage{multibib}
+\newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
+    Conference Proceedings,%
+    Poster Presentations,%
+    Invited Presentations,%
+    Published Methods,%
+    Contributions to Open Source Scientific Software}
+\makeatletter
+\renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\firstname{Christopher}
+\familyname{Markiewicz}
+\title{Curriculum Vitae}
+\address{Boston University}{Program in Cognitive and Neural Systems}{635 Commonwealth Ave, Room 415, Boston, MA 02215}
+\email{effigies@bu.edu}
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2010 -- present}{PhD. Cognitive and Neural Systems}{Boston University}{Boston, MA}{}{}
+\cventry{2009}{BS. Mathematics}{University of Tulsa}{Tulsa, OK}{}{}
+\cventry{2009}{BCS. Computer Science}{University of Tulsa}{Tulsa, OK}{}{}
+
+\section{Additional Research Experience}
+\cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}{Tulsa, OK}{}
+{Operating systems security. Advisor: John Hale, Ph.D.}
+
+\section{Professional Employment}
+\cventry{2009 -- 2010}{Neuroinformatics Intern}{Laureate Institute for Brain Research}{Tulsa, OK}{}{}
+\cventry{2009 -- 2010}{Bioinformatics Programmer}{University of Tulsa}{Tulsa, OK}{}{}
+
+%\section{Projects}
+%\cvline{MATLAB}{Exploration of velocity tuning in visual cortex}
+%\cvline{Python}{Canary song syntax analysis using variable-order Markov models}
+%\cvline{Python}{Phoneme reconstruction using multi-voxel pattern analysis}
+%\cvline{Python}{Online Brain Atlas Reconciliation Tool}
+%
+%\section{Technical Expertise}
+%\cvline{}{Neuroinformatics, functional magnetic resonance imaging,
+%          multi-variate pattern analysis, neural modeling, artificial
+%          intelligence}
+%
+%\section{Computer skills}
+%\cvcomputer{Programming}{Python, C, MATLAB, Haskell, Perl, Shell}
+%           {Machine Learning}{Random Forests, ARTMAP, SVM, Neural Networks,
+%                              SOM, Linear / Quadratic Discriminant Analysis,
+%                              Variable-order Markov Models}
+
+\section{Funding}
+\cventry{2011 -- 2016}{NSF SMA-0835976}
+{CELEST, a National Science Foundation Science of Learning Center}
+{P.I. Shinn-Cunningham}{}{}
+
+
+\nocitepr{Markiewicz2016}
+\nociteconf{Louthan2009,Roberts2010}
+\nocitetalk{Johnson2014}
+\nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
+\nocitemthd{philips-cdas,you2015}
+\nocitecode{PyMVPA2_4_1,nipype0_12_0,PySurfer0_6,nibabel2_1_0}
+\section{Publications}
+\bibliographystylepr{plainyr-rev}
+\bibliographypr{self}
+\bibliographystyleconf{plainyr-rev}
+\bibliographyconf{self}
+\section{Presentations}
+\bibliographystyletalk{plainyr-rev}
+\bibliographytalk{self}
+\bibliographystylepost{plainyr-rev}
+\bibliographypost{self}
+\section{Software}
+\bibliographystylemthd{plainyr-rev}
+\bibliographymthd{self}
+\bibliographystylecode{plainyr-rev}
+\bibliographycode{self}
+
+\section{Service/Leadership}
+\cventry{2015}{Co-organizer}{7th Annual Inter-Science of Learning Conference}{La Jolla, CA}{}{}
+\cventry{2014 -- present}{Student member}{CompNet Outreach and Meeting Initiatives Committee}{Boston University}{}{}
+\cventry{2013 -- 2014}{President}{Computational Neuroscience Student Organization}{Boston University}{}{}
+\cventry{2013}{Co-organizer}{5th Annual Inter-Science of Learning Conference}{Philadelphia, PA}{}{}
+
+\end{document}
