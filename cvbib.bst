@@ -226,6 +226,17 @@ FUNCTION {tie.or.space.prefix}
   swap$
 }
 
+FUNCTION {highlight.if.cv.author}
+{ duplicate$ purify$ duplicate$ duplicate$ duplicate$
+	"Markiewicz CJ" = swap$
+	"Johnson CJ" = + swap$
+	"Markiewicz C" = + swap$
+	"Johnson C" = +
+    { bolden }
+    'skip$
+  if$
+}
+
 FUNCTION {capitalize}
 { "u" change.case$ "t" change.case$ }
 
@@ -414,6 +425,7 @@ FUNCTION {format.names}
     { s nameptr
       "{vv~}{ll}{ f{}}{ jj}"
       format.name$
+      highlight.if.cv.author
       remove.dots
       bibinfo bibinfo.check
       type$ "presentation" =
