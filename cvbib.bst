@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `pres,pres-bf,seq-yrr,nm-rvx,jnrlst,dt-beg,yr-par,atit-u,pgsep-c,num-xser,isbn,issn,doi,xedn,nfss,')
+%% merlin.mbs  (with options: `pres,pres-bf,seq-yrr,nm-rvx,jnrlst,dt-beg,yr-par,atit-u,pgsep-c,num-xser,isbn,doi,xedn,nfss,')
 %% ----------------------------------------
 %% *** CV citations ***
 %% 
@@ -47,7 +47,6 @@ ENTRY
     howpublished
     institution
     isbn
-    issn
     journal
     key
     month
@@ -542,16 +541,6 @@ FUNCTION {format.isbn}
   if$
 }
 
-FUNCTION {format.issn}
-{ issn "issn" bibinfo.check
-  duplicate$ empty$ 'skip$
-    {
-      new.block
-      "ISSN " swap$ *
-    }
-  if$
-}
-
 FUNCTION {format.doi}
 { doi empty$
     { "" }
@@ -1042,7 +1031,6 @@ FUNCTION {article}
       format.pages output
     }
   if$
-  format.issn output
   format.doi output
   new.block
   format.note output
@@ -1185,7 +1173,6 @@ FUNCTION {inproceedings}
         }
       if$
       format.isbn output
-      format.issn output
     }
     { format.incoll.inproc.crossref output.nonnull
       format.pages output
@@ -1334,7 +1321,6 @@ FUNCTION {proceedings}
      }
   if$
   format.isbn output
-  format.issn output
   format.doi output
   new.block
   format.note output

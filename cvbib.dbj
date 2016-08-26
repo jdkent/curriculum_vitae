@@ -402,8 +402,8 @@ End of customized bst file
 %   %: (def) No ISBN
 %--------------------
 %ISSN NUMBER:
-  issn,%: Include ISSN
-%   %: (def) No ISSN
+    %: (def) No ISSN
+% issn,%: Include ISSN
 %--------------------
 %DOI NUMBER:
   doi,%: Include DOI
