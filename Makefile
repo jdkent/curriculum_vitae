@@ -7,11 +7,14 @@ cv.pdf: $(BBLS)
 	pdflatex cv
 	pdflatex cv
 
-$(AUXS): cv.tex self.bib
+$(AUXS): cv.tex self.bib cvbib.bst
 	pdflatex cv
 
 $(BBLS): %.bbl: %.aux
 	bibtex $<
+
+cvbib.bst: cvbib.dbj
+	latex $<
 
 clean:
 	rm *.pdf *.aux *.bbl *.log *.out *.blg
