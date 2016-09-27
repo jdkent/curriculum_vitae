@@ -1276,8 +1276,9 @@ FUNCTION {presentation}
   format.title output
   new.block
   format.organization.address "organization and address" output.check
-  month "month" output.check
-  year "year" output.check
+  month " " * year * "year" output.check
+  %month "month" output.check
+  %year "year" output.check
   new.block
   format.note output
   new.sentence
