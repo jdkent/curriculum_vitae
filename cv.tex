@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper, sans]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -17,24 +17,33 @@
 \firstname{Christopher}
 \familyname{Markiewicz}
 \title{Curriculum Vitae}
-\address{Boston University}{Program in Cognitive and Neural Systems}{635 Commonwealth Ave, Room 415, Boston, MA 02215}
+\address{Boston University}{Program in Cognitive and Neural Systems}%
+    {635 Commonwealth Ave, Room 415, Boston, MA 02215}
 \email{effigies@bu.edu}
 
 \begin{document}
 \makecvtitle
 
 \section{Education}
-\cventry{2010 -- present}{PhD. Cognitive and Neural Systems}{Boston University}{Boston, MA}{}{}
+\cventry{2010 -- present}{PhD. Cognitive and Neural Systems}%
+    {Boston University}{Boston, MA}{}{Advisor: Jason W. Bohland}
 \cventry{2009}{BS. Mathematics}{University of Tulsa}{Tulsa, OK}{}{}
 \cventry{2009}{BCS. Computer Science}{University of Tulsa}{Tulsa, OK}{}{}
 
 \section{Additional Research Experience}
-\cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}{Tulsa, OK}{}
-{Operating systems security. Advisor: John Hale, Ph.D.}
+\cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}%
+    {Tulsa, OK}{}{Operating systems security. Advisor: John Hale}
 
 \section{Professional Employment}
-\cventry{2009 -- 2010}{Neuroinformatics Intern}{Laureate Institute for Brain Research}{Tulsa, OK}{}{}
-\cventry{2009 -- 2010}{Bioinformatics Programmer}{University of Tulsa}{Tulsa, OK}{}{}
+\cventry{2009 -- 2010}{Bioinformatics Programmer}{University of Tulsa}%
+    {Tulsa, OK}{}{PySNPRank, PyGAIN, Bioinformatics format converters}
+\cventry{2009 -- 2010}{Neuroinformatics Intern}%
+    {Laureate Institute for Brain Research}{Tulsa, OK}{}%
+    {}
+\cventry{Summer 2008}{Intern}{True Digital Security}{Tulsa, OK}{}%
+    {High bandwidth traffic shaping, Transparent emergency data destruction}
+\cventry{Summer 2007}{Intern}{Meketrex Technologies, Inc.}{Tulsa, OK}{}%
+    {Technical copywriting}
 
 %\section{Projects}
 %\cvline{MATLAB}{Exploration of velocity tuning in visual cortex}
@@ -58,7 +67,6 @@
 {CELEST, a National Science Foundation Science of Learning Center}
 {P.I. Shinn-Cunningham}{}{}
 
-
 \nocitepr{Markiewicz2016}
 \nociteconf{Louthan2009,Roberts2010}
 \nocitetalk{Johnson2014}
@@ -66,19 +74,19 @@
 \nocitemthd{philips-cdas,you2015}
 \nocitecode{PyMVPA2_4_1,nipype0_12_0,PySurfer0_6,nibabel2_1_0}
 \section{Publications}
-\bibliographystylepr{plainyr-rev}
+\bibliographystylepr{cvbib}
 \bibliographypr{self}
-\bibliographystyleconf{plainyr-rev}
+\bibliographystyleconf{cvbib}
 \bibliographyconf{self}
 \section{Presentations}
-\bibliographystyletalk{plainyr-rev}
+\bibliographystyletalk{cvbib}
 \bibliographytalk{self}
-\bibliographystylepost{plainyr-rev}
+\bibliographystylepost{cvbib}
 \bibliographypost{self}
 \section{Software}
-\bibliographystylemthd{plainyr-rev}
+\bibliographystylemthd{cvbib}
 \bibliographymthd{self}
-\bibliographystylecode{plainyr-rev}
+\bibliographystylecode{cvbib}
 \bibliographycode{self}
 
 \section{Service/Leadership}
