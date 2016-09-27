@@ -6,9 +6,7 @@ all: cv.pdf
 cv.pdf: $(BBLS)
 	pdflatex cv
 	pdflatex cv
-	touch $(AUXS)
-	touch $(BBLS)
-	touch cv.pdf
+	touch $(AUXS) $(BBLS) cv.pdf
 
 $(AUXS): cv.tex self.bib cvbib.bst
 	pdflatex cv
