@@ -5,10 +5,12 @@
 \usepackage[scale=0.75,margin=.75in]{geometry}
 \moderncvtheme[grey]{classic}
 \usepackage{multibib}
+\usepackage{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
     Conference Proceedings,%
     Poster Presentations,%
-    Invited Presentations,%
+    Invited Talks,%
     Published Methods,%
     Contributions to Open Source Scientific Software}
 \makeatletter
@@ -93,6 +95,7 @@
 \bibliographypr{self}
 \bibliographystyleconf{cvbib}
 \bibliographyconf{self}
+\footnotetext[2]{Presenter, when not first author}
 \section{Presentations}
 \bibliographystyletalk{cvbib}
 \bibliographytalk{self}
