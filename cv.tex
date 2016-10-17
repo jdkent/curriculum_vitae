@@ -1,8 +1,8 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,letterpaper,sans]{moderncv}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75,margin=.75in]{geometry}
 \moderncvtheme[grey]{classic}
 \usepackage{multibib}
 \newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
@@ -32,18 +32,49 @@
 
 \section{Additional Research Experience}
 \cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}%
-    {Tulsa, OK}{}{Operating systems security. Advisor: John Hale}
+    {Tulsa, OK}{}%
+    {Operating systems security. Network traffic analysis. Advisor: John Hale}
 
 \section{Professional Employment}
-\cventry{2009 -- 2010}{Bioinformatics Programmer}{University of Tulsa}%
-    {Tulsa, OK}{}{PySNPRank, PyGAIN, Bioinformatics format converters}
-\cventry{2009 -- 2010}{Neuroinformatics Intern}%
+\cventry{2009 -- 2010}{Bioinformatics programmer}{University of Tulsa}%
+    {Tulsa, OK}{}{InSilico Research Group: PySNPRank, PyGAIN, Bioinformatics format converters}
+\cventry{2009 -- 2010}{Neuroinformatics intern}%
     {Laureate Institute for Brain Research}{Tulsa, OK}{}%
-    {}
+    {XNAT deployment, HIPAA compliance, Asset tracker}
 \cventry{Summer 2008}{Intern}{True Digital Security}{Tulsa, OK}{}%
     {High bandwidth traffic shaping, Transparent emergency data destruction}
 \cventry{Summer 2007}{Intern}{Meketrex Technologies, Inc.}{Tulsa, OK}{}%
     {Technical copywriting}
+
+\section{Teaching Experience}
+\cventry{2008-2009}{Tutor}{University College Cork}{Cork}{Ireland}%
+    {CS 4620/4621 Functional Programming. Professor: Joseph Manning}
+\cventry{2007-2008}{Teaching assistant}{University of Tulsa}{Tulsa}{OK}%
+    {MATH 1083 Contemporary Mathematics. Professor: Janica Edmonds}
+
+\section{Technical Expertise}
+\cvline{}{Data analysis, functional magnetic resonance imaging,
+    biological modeling, neural networks, neuroinformatics,
+    digital signal processing, speech analysis, pattern recognition,
+    software engineering, computer security, system administration,
+    database management.}
+\subsection{Technologies}
+\cvline{Scientific}{
+    FreeSurfer/FsFast, FSL, AFNI,   % fMRI
+    NiPype, PyMVPA,                 % fMRI/Python
+    scikit-learn, PsychoPy,         % Scientific Python
+    PRAAT}                          % Miscellaneous
+\cvline{Cluster computing}{Load Sharing Facility (LSF),
+                           Oracle/Sun Grid Engine (SGE),
+                           Andrew File System (AFS)}
+\cvline{Web}{HTML/CSS, JavaScript, JQuery, Python/Django, Perl/CGI, PHP, WSGI}
+\cvline{Version control}{git (GitHub, git-annex), subversion, CVS}
+%\cvline{Administration}{nginx, Apache, GitLab, gitolite/git-annex}
+
+\subsection{Programming Languages}
+\cvline{Proficient}{Python 2/3, MATLAB, C, Perl, Shell}
+\cvline{Competent}{Haskell, \LaTeX, Java, Mathematica}
+\cvline{Familiar}{R, JavaScript, PHP, Common LISP}
 
 \section{Funding}
 \cventry{2011 -- 2016}{NSF SMA-0835976}
@@ -53,7 +84,8 @@
 \nocitepr{Markiewicz2016}
 \nociteconf{Louthan2009,Roberts2010}
 \nocitetalk{Johnson2014}
-\nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
+\nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,
+            JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
 \nocitemthd{philips-cdas,you2015}
 \nocitecode{PyMVPA2_4_1,nipype0_12_0,PySurfer0_6,nibabel2_1_0}
 \section{Publications}
