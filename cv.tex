@@ -1,21 +1,27 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
+\moderncvtheme[grey]{classic}
 \usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75,margin=.75in]{geometry}
+\recomputelengths
+
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[scale=0.75,margin=.75in]{geometry}
-\moderncvtheme[grey]{classic}
-\usepackage{multibib}
+
 \usepackage{footmisc}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{multibib}
 \newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
     Conference Proceedings,%
     Poster Presentations,%
     Invited Talks,%
     Published Methods,%
     Contributions to Open Source Scientific Software}
+
 \makeatletter
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
 \makeatother
+
 \firstname{Christopher}
 \familyname{Markiewicz}
 \extrainfo{Year of Birth: 1987}
