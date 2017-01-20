@@ -8,7 +8,7 @@ $(BUILD)/cv.pdf: $(BBLS)
 	pdflatex -output-directory=$(BUILD) cv
 	pdflatex -output-directory=$(BUILD) cv
 
-%.aux: cv.tex self.bib cvbib.bst
+%.aux: cv.tex contact.tex self.bib cvbib.bst
 	pdflatex -output-directory=$(BUILD) cv
 
 %.bbl: %.aux
