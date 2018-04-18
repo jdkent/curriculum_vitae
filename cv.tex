@@ -1,5 +1,5 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
-\moderncvtheme[grey]{classic}
+\moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 
 \usepackage[scale=0.75,margin=.75in]{geometry}
@@ -10,11 +10,9 @@
 
 \usepackage{footmisc}
 \usepackage{multibib}
-\newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
-    Conference Proceedings,%
+\newcites{pr,post,talk,code}{Peer Reviewed Journals,%
     Poster Presentations,%
-    Invited Talks,%
-    Published Methods,%
+    Talks,%
     Contributions to Open Source Scientific Software}
 
 \makeatletter
@@ -30,102 +28,77 @@
 
 \vspace{-1em}
 \section{Education}
-\cventry{2010 -- 2017}{PhD. Cognitive and Neural Systems}%
-    {Boston University}{Boston, MA}{}%
-    {\underline{Dissertation}: Multivariate pattern analysis of input and output
-     representations of speech\\
-     \underline{Advisor}: Jason W. Bohland}
-\cventry{2009}{BS. Mathematics}{University of Tulsa}{Tulsa, OK}{}{}
-\cventry{2009}{BCS. Computer Science}{University of Tulsa}{Tulsa, OK}{}{}
+\cventry{2014 -- }{PhD. Neuroscience}%
+    {University of Iowa}{Iowa City, IA}{}%
+    {\underline{Research Focus}: Neural basis of cognitive control.\\
+     \underline{Advisor}: Dr. Michelle W. Voss}
+\cventry{2014}{B.A. \underline{Major}: Psychology \& \underline{Concentration}: Neuroscience}{Grinnell College}{Grinnell, IA}{}{}
 
 \section{Additional Research Experience}
-\cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}%
-    {Tulsa, OK}{}%
-    {Operating systems security. Network traffic analysis. Advisor: John Hale}
-
-\section{Professional Employment}
-\cventry{2017 -- }{Software Developer}{Stanford University}{Stanford, CA}{}%
-    {Center for Reproducible Neuroscience}
-\cventry{2009 -- 2010}{Bioinformatics programmer}{University of Tulsa}%
-    {Tulsa, OK}{}{InSilico Research Group: PySNPRank, PyGAIN, Bioinformatics format converters}
-\cventry{2009 -- 2010}{Neuroinformatics intern}%
-    {Laureate Institute for Brain Research}{Tulsa, OK}{}%
-    {XNAT deployment, HIPAA compliance, Asset tracker}
-\cventry{Summer 2008}{Intern}{True Digital Security}{Tulsa, OK}{}%
-    {High bandwidth traffic shaping, Transparent emergency data destruction}
-\cventry{Summer 2007}{Intern}{Meketrex Technologies, Inc.}{Tulsa, OK}{}%
-    {Technical copywriting}
+\cventry{Spring 2015}{Graduate Research Assistant}{University of Iowa}%
+    {Iowa City, IA}{}%
+    {Neuroimaging of reward sensitivity in adolescents. Advisor: Dr. Jatin Vaidya}
+\cventry{Winter 2014}{Graduate Research Assistant}{University of Iowa}%
+    {Iowa City, IA}{}%
+    {Spatial memory in rats; programming reinforcement contingencies. Advisor: Dr. Ryan Lalumiere}
+\cventry{Summer 2013}{Undergraduate Research Assistant}{Duke University}%
+    {Durham, NC}{}%
+    {Investigating mild cognitive impairment with diffusion tensor imaging. Advisor: Dr. Guy Potter}
+\cventry{Summer 2012}{Undergraduate Research Assistant}{Grinnell College}%
+    {Grinnell, IA}{}%
+    {Physiological and affective experience of simulated outdoor exercise. Advisor: Dr. Elizabeth Queathem}
 
 \section{Teaching Experience}
-\cventry{2008-2009}{Tutor}{University College Cork}{Cork}{Ireland}%
-    {CS 4620/4621 Functional Programming. Professor: Joseph Manning}
-\cventry{2007-2008}{Teaching assistant}{University of Tulsa}{Tulsa}{OK}%
-    {MATH 1083 Contemporary Mathematics. Professor: Janica Edmonds}
+\cventry{2018}{Teaching Assistant}{University of Iowa}{Iowa City}{IA}%
+    {PSY:6280:0001 Structural Functional MRI Methods/Applic. Professor: Michelle Voss}
+\cventry{2016}{Teaching Lab Assistant}{University of Iowa}{Iowa City}{IA}%
+    {ACB:6252:0001 Functional Neuroanatomy. Professor: Justin Sipla}
 
 \section{Awards and Fellowships}
-\cvline{2011 -- 2016}{Research Assistantship,
-                      CELEST NSF Science of Learning Center}
-\cvline{Nov. 2014}{CompNet Travel Award to Society for Neuroscience Conference}
-\cvline{Nov. 2012}{CompNet Travel Award to Society for Neuroscience Conference}
-\cvline{2010 -- 2011}{Dean's Fellowship for Graduate Study, Boston University}
-\cvline{2005 -- 2009}{Presidential Scholarship, University of Tulsa}
-\cvline{2006 -- 2008}{Tulsa Undergraduate Research Challenge Program,
-                      University of Tulsa}
-\cvline{2007}{Barry M. Goldwater Scholarship}
+\cvline{2016}{\href{https://www.grad.uiowa.edu/gc-post-comprehensive-research-awards} {Post Comprehensive Research Award}}
+\cvline{2015}{University of Iowa Training Grant T-32}
+\cvline{2013}{Grinnellink Grant Fund}
+\cvline{2012}{Grinnell Summer Research Grant}
+\cvline{2012 -- 2014}{Student-Athlete Academic All Conference (Swimming)}
 
 \section{Technical Expertise}
-\cvline{}{Data analysis, functional magnetic resonance imaging,
-    biological modeling, neural networks, neuroinformatics,
-    digital signal processing, speech analysis, pattern recognition,
-    software engineering, computer security, system administration,
-    database management.}
+\cvline{}{Analysis of functional magnetic imaging data, data management,
+          coding, rat husbandry}
 \subsection{Technologies}
 \cvline{Scientific}{
-    FreeSurfer/FsFast, FSL, AFNI,   % fMRI
-    NiPype, PyMVPA,                 % fMRI/Python
-    scikit-learn, PsychoPy,         % Scientific Python
-    PRAAT}                          % Miscellaneous
-\cvline{Cluster computing}{Load Sharing Facility (LSF),
-                           Oracle/Sun Grid Engine (SGE),
-                           Andrew File System (AFS)}
-\cvline{Web}{HTML/CSS, JavaScript, JQuery, Python/Django, Perl/CGI, PHP, WSGI}
-\cvline{Version control}{git (GitHub, git-annex), subversion, CVS}
-%\cvline{Administration}{nginx, Apache, GitLab, gitolite/git-annex}
+    FSL, AFNI, Freesurfer/FsFast,   % fMRI
+    NiPype,                         % fMRI/Python
+    PsychoPy, E-Prime}              % Scientific Python
+\cvline{Cluster computing}{Oracle/Sun Grid Engine (SGE),
+                           Docker,
+                           Singularity}
+\cvline{Version control}{git (GitHub, git-annex)}
+
 
 \subsection{Programming Languages}
-\cvline{Proficient}{Python 2/3, MATLAB, C, Perl, Shell}
-\cvline{Competent}{Haskell, \LaTeX, Java, Mathematica}
-\cvline{Familiar}{R, JavaScript, PHP, Common LISP}
+\cvline{Proficient}{Born Again SHell (BASH)}
+\cvline{Competent}{Python 2/3}
+\cvline{Familiar}{R, MATLAB, \LaTeX}
 
-\nocitepr{Markiewicz2016}
-\nociteconf{Louthan2009,Roberts2010}
-\nocitetalk{Johnson2013,Johnson2014,Markiewicz2016b,Markiewicz2017}
-\nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,
-            JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
-\nocitemthd{philips-cdas,you2015}
-\nocitecode{PyMVPA2_4_1,nipype0_12_0,PySurfer0_6,nibabel2_1_0}
+\nocitepr{DuBose2017}
+\nocitepost{Kent2016a}
+\nocitetalk{Kent2013,Kent2015b,Kent2015a,Kent2016b,Kent2017}
+\nocitecode{esteban_oscar_2018_1156273,gorgolewski_krzysztof_j_2018_1160610}
 \section{Publications}
 \bibliographystylepr{cvbib}
 \bibliographypr{self}
-\bibliographystyleconf{cvbib}
-\bibliographyconf{self}
 \section{Presentations}
 \bibliographystyletalk{cvbib}
 \bibliographytalk{self}
-\footnotetext[2]{Presenter, when not first author}
-\clearpage
 \bibliographystylepost{cvbib}
 \bibliographypost{self}
 \section{Software}
-\bibliographystylemthd{cvbib}
-\bibliographymthd{self}
 \bibliographystylecode{cvbib}
 \bibliographycode{self}
 
 \section{Service/Leadership}
-\cventry{2015}{Co-organizer}{7th Annual Inter-Science of Learning Conference}{La Jolla, CA}{}{}
-\cventry{2014 -- 2016}{Student member}{CompNet Outreach and Meeting Initiatives Committee}{Boston University}{}{}
-\cventry{2013 -- 2014}{President}{Computational Neuroscience Student Organization}{Boston University}{}{}
-\cventry{2013}{Co-organizer}{5th Annual Inter-Science of Learning Conference}{Philadelphia, PA}{}{}
+\cventry{2015 -- 2018}{Committee Member}{Eastern Iowa Brain Bee}{Iowa City, IA}{}{}
+\cventry{2015}{Student Member}{YOU@UI Neuroscience Outreach}{University of Iowa}{Iowa City}{IA}
+\cventry{2015}{Demonstrator}{Brain Awareness Week Outreach}{University of Iowa}{Iowa City}{IA}
 
 \end{document}

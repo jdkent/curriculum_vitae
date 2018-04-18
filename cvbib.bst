@@ -7,7 +7,7 @@
 %% merlin.mbs  (with options: `pres,pres-bf,seq-yrr,nm-rvx,jnrlst,dt-beg,yr-par,atit-u,pgsep-c,num-xser,isbn,doi,xedn,nfss,')
 %% ----------------------------------------
 %% *** CV citations ***
-%% 
+%%
 %% Copyright 1994-2011 Patrick W Daly
  % ===============================================================
  % IMPORTANT NOTICE:
@@ -227,10 +227,10 @@ FUNCTION {tie.or.space.prefix}
 
 FUNCTION {highlight.if.cv.author}
 { duplicate$ purify$ duplicate$ duplicate$ duplicate$
-	"Markiewicz CJ" = swap$
-	"Johnson CJ" = + swap$
-	"Markiewicz C" = + swap$
-	"Johnson C" = +
+	"Kent J" = swap$
+	"Kent J" = + swap$
+	"Kent JD" = + swap$
+	"Kent J" = +
     { bolden }
     'skip$
   if$
