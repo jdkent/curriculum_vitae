@@ -1,5 +1,5 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
-\moderncvtheme[grey]{classic}
+\moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 
 \usepackage[scale=0.75,margin=.75in]{geometry}
@@ -10,11 +10,9 @@
 
 \usepackage{footmisc}
 \usepackage{multibib}
-\newcites{pr,conf,post,talk,mthd,code}{Peer Reviewed Journals,%
-    Conference Proceedings,%
+\newcites{pr,post,talk,code}{Peer Reviewed Journals,%
     Poster Presentations,%
-    Invited Talks,%
-    Published Methods,%
+    Talks,%
     Contributions to Open Source Scientific Software}
 
 \makeatletter
@@ -30,102 +28,73 @@
 
 \vspace{-1em}
 \section{Education}
-\cventry{2010 -- 2017}{PhD. Cognitive and Neural Systems}%
-    {Boston University}{Boston, MA}{}%
-    {\underline{Dissertation}: Multivariate pattern analysis of input and output
-     representations of speech\\
-     \underline{Advisor}: Jason W. Bohland}
-\cventry{2009}{BS. Mathematics}{University of Tulsa}{Tulsa, OK}{}{}
-\cventry{2009}{BCS. Computer Science}{University of Tulsa}{Tulsa, OK}{}{}
-
-\section{Additional Research Experience}
-\cventry{2005 -- 2008}{Undergraduate researcher}{University of Tulsa}%
-    {Tulsa, OK}{}%
-    {Operating systems security. Network traffic analysis. Advisor: John Hale}
-
-\section{Professional Employment}
-\cventry{2017 -- }{Software Developer}{Stanford University}{Stanford, CA}{}%
-    {Center for Reproducible Neuroscience}
-\cventry{2009 -- 2010}{Bioinformatics programmer}{University of Tulsa}%
-    {Tulsa, OK}{}{InSilico Research Group: PySNPRank, PyGAIN, Bioinformatics format converters}
-\cventry{2009 -- 2010}{Neuroinformatics intern}%
-    {Laureate Institute for Brain Research}{Tulsa, OK}{}%
-    {XNAT deployment, HIPAA compliance, Asset tracker}
-\cventry{Summer 2008}{Intern}{True Digital Security}{Tulsa, OK}{}%
-    {High bandwidth traffic shaping, Transparent emergency data destruction}
-\cventry{Summer 2007}{Intern}{Meketrex Technologies, Inc.}{Tulsa, OK}{}%
-    {Technical copywriting}
+\cventry{2014 -- }{PhD. Neuroscience}%
+    {University of Iowa}{Iowa City, IA}{}%
+    {\underline{Research Focus}: Neural basis of cognitive control.\\
+     \underline{Advisor}: Dr. Michelle W. Voss}
+\cventry{2014}{B.A. \underline{Major}: Psychology \& \underline{Concentration}: Neuroscience}{Grinnell College}{Grinnell, IA}{}{}
 
 \section{Teaching Experience}
-\cventry{2008-2009}{Tutor}{University College Cork}{Cork}{Ireland}%
-    {CS 4620/4621 Functional Programming. Professor: Joseph Manning}
-\cventry{2007-2008}{Teaching assistant}{University of Tulsa}{Tulsa}{OK}%
-    {MATH 1083 Contemporary Mathematics. Professor: Janica Edmonds}
+\cventry{2018}{Teaching Assistant}{University of Iowa}{Iowa City}{IA}%
+    {PSY:6280:0001 Structural Functional MRI Methods/Applic. Professor: Michelle Voss}
+\cventry{2016}{Teaching Lab Assistant}{University of Iowa}{Iowa City}{IA}%
+    {ACB:6252:0001 Functional Neuroanatomy. Professor: Justin Sipla}
 
 \section{Awards and Fellowships}
-\cvline{2011 -- 2016}{Research Assistantship,
-                      CELEST NSF Science of Learning Center}
-\cvline{Nov. 2014}{CompNet Travel Award to Society for Neuroscience Conference}
-\cvline{Nov. 2012}{CompNet Travel Award to Society for Neuroscience Conference}
-\cvline{2010 -- 2011}{Dean's Fellowship for Graduate Study, Boston University}
-\cvline{2005 -- 2009}{Presidential Scholarship, University of Tulsa}
-\cvline{2006 -- 2008}{Tulsa Undergraduate Research Challenge Program,
-                      University of Tulsa}
-\cvline{2007}{Barry M. Goldwater Scholarship}
+\cvline{2019}{\href{http://www.repronim.org/fellowship.html} {Reproducible Neuroimaging Fellowship}}
+\cvline{2016}{\href{https://www.grad.uiowa.edu/gc-post-comprehensive-research-awards} {Post Comprehensive Exam Research Award}}
+\cvline{2015}{University of Iowa Training Grant T-32}
+\cvline{2013}{Grinnellink Grant Fund}
+\cvline{2012}{Grinnell Summer Research Grant}
+\cvline{2012 -- 2014}{Student-Athlete Academic All Conference (Swimming)}
 
 \section{Technical Expertise}
-\cvline{}{Data analysis, functional magnetic resonance imaging,
-    biological modeling, neural networks, neuroinformatics,
-    digital signal processing, speech analysis, pattern recognition,
-    software engineering, computer security, system administration,
-    database management.}
+\cvline{}{Analysis of functional magnetic imaging data, data management, coding}
 \subsection{Technologies}
 \cvline{Scientific}{
-    FreeSurfer/FsFast, FSL, AFNI,   % fMRI
-    NiPype, PyMVPA,                 % fMRI/Python
-    scikit-learn, PsychoPy,         % Scientific Python
-    PRAAT}                          % Miscellaneous
-\cvline{Cluster computing}{Load Sharing Facility (LSF),
-                           Oracle/Sun Grid Engine (SGE),
-                           Andrew File System (AFS)}
-\cvline{Web}{HTML/CSS, JavaScript, JQuery, Python/Django, Perl/CGI, PHP, WSGI}
-\cvline{Version control}{git (GitHub, git-annex), subversion, CVS}
-%\cvline{Administration}{nginx, Apache, GitLab, gitolite/git-annex}
+    FSL, AFNI, Freesurfer/FsFast,   % fMRI
+    NiPype,                         % fMRI/Python
+    PsychoPy, E-Prime}              % Scientific Python
+\cvline{Cluster computing}{Oracle/Sun Grid Engine (SGE)}
+\cvline{Containers}{Docker, Singularity}
+\cvline{Version control}{git (GitHub, git-annex)}
+\cvline{Continuous Integration}{circleci, travisci}
 
 \subsection{Programming Languages}
-\cvline{Proficient}{Python 2/3, MATLAB, C, Perl, Shell}
-\cvline{Competent}{Haskell, \LaTeX, Java, Mathematica}
-\cvline{Familiar}{R, JavaScript, PHP, Common LISP}
+\cvline{Proficient}{Born Again SHell (BASH), Python 2/3}
+\cvline{Competent}{R}
+\cvline{Familiar}{MATLAB, \LaTeX}
 
-\nocitepr{Markiewicz2016}
-\nociteconf{Louthan2009,Roberts2010}
-\nocitetalk{Johnson2013,Johnson2014,Markiewicz2016b,Markiewicz2017}
-\nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,
-            JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
-\nocitemthd{philips-cdas,you2015}
-\nocitecode{PyMVPA2_4_1,nipype0_12_0,PySurfer0_6,nibabel2_1_0}
+
+\section{Training}
+\cventry{2019}{OHBM Hackathon}{Rome}{Italy}{}{}
+\cventry{2019}{Coastal Coding}{Florida International University}{Miami}{Florida}{}
+\cventry{2018 -- }{Teaching Club}{University of Iowa}{Iowa City}{Iowa}{Bi-weekly meetings about teaching strategies in the classroom}
+\cventry{2018}{Neurohackademy}{University of Washington}{Seattle}{Washington}{}
+\cventry{2017}{Code Sprint}{Stanford University}{Stanford}{California}{}
+
+\nocitepr{DuBose2017,Esteban2019,Lee2019}
+\nocitepost{Kent2016a,Kent2019a,Kent2019b,Kent2019c}
+\nocitetalk{Kent2013,Kent2015b,Kent2015a,Kent2016b,Kent2017,Kent2018}
+\nocitecode{esteban_oscar_2018_1156273,gorgolewski_krzysztof_j_2018_1160610,kent_james_d_2019_2552303}
 \section{Publications}
 \bibliographystylepr{cvbib}
 \bibliographypr{self}
-\bibliographystyleconf{cvbib}
-\bibliographyconf{self}
 \section{Presentations}
 \bibliographystyletalk{cvbib}
 \bibliographytalk{self}
-\footnotetext[2]{Presenter, when not first author}
-\clearpage
 \bibliographystylepost{cvbib}
 \bibliographypost{self}
 \section{Software}
-\bibliographystylemthd{cvbib}
-\bibliographymthd{self}
 \bibliographystylecode{cvbib}
 \bibliographycode{self}
 
 \section{Service/Leadership}
-\cventry{2015}{Co-organizer}{7th Annual Inter-Science of Learning Conference}{La Jolla, CA}{}{}
-\cventry{2014 -- 2016}{Student member}{CompNet Outreach and Meeting Initiatives Committee}{Boston University}{}{}
-\cventry{2013 -- 2014}{President}{Computational Neuroscience Student Organization}{Boston University}{}{}
-\cventry{2013}{Co-organizer}{5th Annual Inter-Science of Learning Conference}{Philadelphia, PA}{}{}
+\cventry{2018 -- }{Organizer}{\href{https://uihackyhour.github.io/} {\color{blue}{Hacky Hour}}}{University of Iowa}{Iowa City}{Iowa}
+\cventry{2018 -- }{Organizer}{\href{https://github.com/NeuroimagingUIowa/monthlyMeetingMinutes} {\color{blue}{Neuroimaging Workgroup}}}{University of Iowa}{Iowa City}{Iowa}
+\cventry{2018, 2019}{Organizer}{BrainHack@UI}{University of Iowa}{Iowa City}{Iowa}
+\cventry{2015 -- 2019}{Committee Member}{Eastern Iowa Brain Bee}{University of Iowa}{Iowa City}{Iowa}
+\cventry{2015}{Student Member}{YOU@UI Neuroscience Outreach}{University of Iowa}{Iowa City}{Iowa}
+\cventry{2015}{Demonstrator}{Brain Awareness Week Outreach}{University of Iowa}{Iowa City}{Iowa}
 
 \end{document}
