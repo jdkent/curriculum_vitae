@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage{datetime}
 \usepackage{footmisc}
 \usepackage{multibib}
 
@@ -27,6 +28,8 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \renewcommand*\bibliographyitemlabel{\@biblabel{\arabic{enumiv}}}
 \makeatother
+
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
 
 \title{Curriculum Vitae}
 \input{contact}
@@ -148,5 +151,7 @@
 \cvline{Competent}{Haskell, \LaTeX, Java, Mathematica}
 \cvline{Familiar}{R, JavaScript, PHP, Common LISP}
 
+\vspace{24pt}
+\center{Updated: \monthyeardate\today}
 
 \end{document}
