@@ -10,9 +10,14 @@
 
 \usepackage{footmisc}
 \usepackage{multibib}
-\newcites{pr,conf,preprint,post,talk,mthd,code}{Peer Reviewed Journals,%
+
+% Creates sub-bibliographies
+% For example, pr creates \citepr, \nocitepr, \bibliographystylepr, \bibliographypr
+% \bibliographystylepr will create a \subsection{Peer Reviewed Journals}
+% And so on.
+\newcites{pr,conf,prep,post,talk,mthd,code}{Peer Reviewed Journals,%
     Conference Proceedings,%
-    Preprint,%
+    Preprints,%
     Poster Presentations,%
     Invited Talks,%
     Published Methods,%
@@ -98,19 +103,28 @@
 \cvline{Competent}{Haskell, \LaTeX, Java, Mathematica}
 \cvline{Familiar}{R, JavaScript, PHP, Common LISP}
 
-\nocitepr{Markiewicz2016,Esteban2018}
+%% Update citations here. Order doesn't matter among or within groups.
+\nocitepr{Markiewicz2016,Esteban2018,Yarkoni2019,Poldrack2019}
 \nociteconf{Louthan2009,Roberts2010}
-\nocitepreprint{Poldrack2019}
-\nocitetalk{Johnson2013,Johnson2014,Markiewicz2016b,Markiewicz2017,Markiewicz2018}
+\nociteprep{Esteban2019}
+\nocitetalk{Johnson2013,Johnson2014,Markiewicz2016b,Markiewicz2017,
+            Markiewicz2018software,
+            Markiewicz2019a,Markiewicz2019b,Markiewicz2019c}
 \nocitepost{JohnsonYazdanbakhsh2012,JohnsonBohland2012,JohnsonBohland2014a,
-            JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a}
+            JohnsonBohland2014b,Markiewicz2015,Markiewicz2016a,Yarkoni2018,
+            Markiewicz2018poster, Markiewicz2019poster}
 \nocitemthd{philips-cdas,you2015}
 \nocitecode{PyMVPA2_4_1,nipype1_1_6,PySurfer0_9,nibabel2_3_1,fMRIPrep1_2_5,FitLins0_1_0}
+
+%% Boilerplate that creates the order between sub-bibliographies and
+%% organizes into sections.
 \section{Publications}
 \bibliographystylepr{cvbib}
 \bibliographypr{self}
 \bibliographystyleconf{cvbib}
 \bibliographyconf{self}
+\bibliographystyleprep{cvbib}
+\bibliographyprep{self}
 \section{Presentations}
 \bibliographystyletalk{cvbib}
 \bibliographytalk{self}

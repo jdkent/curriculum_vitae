@@ -1,6 +1,6 @@
 BUILD=build
 BBLS=$(BUILD)/pr.bbl $(BUILD)/conf.bbl $(BUILD)/post.bbl $(BUILD)/talk.bbl \
-	 $(BUILD)/mthd.bbl $(BUILD)/code.bbl
+	 $(BUILD)/mthd.bbl $(BUILD)/code.bbl $(BUILD)/prep.bbl
 
 all: $(BUILD)/cv.pdf
 

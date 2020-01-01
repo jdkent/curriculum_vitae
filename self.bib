@@ -155,7 +155,7 @@
     address = {Cambridge, MA},
 }
 
-@presentation{Markiewicz2018,
+@presentation{Markiewicz2018software,
     author = {Christopher J. Markiewicz},
     title = {FMRIprep: Building a Robust Preprocessing Pipeline for fMRI},
     year = {2018},
@@ -163,6 +163,50 @@
     type = {Software demonstration},
     organization = {Organization for Human Brain Mapping Annual Meeting},
     address = {Singapore},
+}
+
+@presentation{Markiewicz2018poster,
+    author = {Markiewicz, Christopher J and
+              Esteban, Oscar and
+              Blair, Ross W and
+              Ma, Feilong and
+              Kent, James D and
+              Heinsfeld, Anibal S and
+              Goncalves, Mathias and
+              Poldrack, Russell A and
+              Gorgolewski, Krzysztof J},
+    title = {FMRIprep: Building a Robust Preprocessing Pipeline for fMRI},
+    year = {2018},
+    month = jun,
+    type = {poster},
+    organization = {Organization for Human Brain Mapping Annual Meeting},
+    address = {Singapore},
+}
+
+@presentation{Yarkoni2018,
+  title={Pybids: Python tools for manipulation and analysis of BIDS datasets},
+  year={2018},
+  author={Yarkoni, Tal and
+          {de la Vega}, Alejandro and
+          DuPre, Elizabeth and
+          Esteban, Oscar and
+          Halchenko, Yarik and
+          Hanke, Michael and
+          Hayot-Sasson, Valerie and
+          Ivanov, Alexander and
+          Kiar, Greg and
+          Markiewicz, Chris and
+          McNamara, Quinten and
+          Petrov, Dmitry and
+          Salo, Taylor and
+          Nielson, Dylan and
+          Poline, Jean-Baptiste and
+          Poldrack, Russell and
+          Gorgolewski, Krzysztof J},
+  month=jun,
+  organization={Organization for Human Brain Mapping},
+  type = {poster},
+  address = {Singapore},
 }
 
 @article{Esteban2018,
@@ -189,12 +233,96 @@
 	isbn = {1548-7105},
 	journal = {Nature Methods},
 	type = {JOUR},
+    note = {Preprint: \doi{10.1101/306951}}
 }
 
-@misc{Poldrack2019,
+@article {Esteban2019,
+	author = {Esteban, Oscar and
+              Ciric, Rastko and
+              Finc, Karolina and
+              Blair, Ross and
+              Markiewicz, Christopher J. and
+              Moodie, Craig A. and
+              Kent, James D. and
+              Goncalves, Mathias and
+              DuPre, Elizabeth and
+              Gomez, Daniel E. P. and
+              Ye, Zhifang and
+              Salo, Taylor and
+              Valabregue, Romain and
+              Amlien, Inge K. and
+              Liem, Franziskus and
+              Jacoby, Nir and
+              Stoji{\'c}, Hrvoje and
+              Cieslak, Matthew and
+              Urchs, Sebastian and
+              Halchenko, Yaroslav O. and
+              Ghosh, Satrajit S. and
+              {de la Vega}, Alejandro and
+              Yarkoni, Tal and
+              Wright, Jessey and
+              Thompson, William H. and
+              Poldrack, Russell A. and
+              Gorgolewski, Krzysztof J.},
+	title = {Analysis of task-based functional MRI data preprocessed with fMRIPrep},
+	elocation-id = {694364},
+	year = {2019},
+	doi = {10.1101/694364},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Functional magnetic resonance imaging (fMRI) is widely used to investigate the neural correlates of cognition. fMRI non-invasively measures brain activity, allowing identification of patterns evoked by tasks performed during scanning. Despite the long history of this technique, the idiosyncrasies of each dataset have led to the use of ad-hoc preprocessing protocols customized for nearly every different study. This approach is time-consuming, error-prone, and unsuitable for combining datasets from many sources. Here we showcase fMRIPrep, a robust preprocessing tool for virtually any human BOLD (blood-oxygen level dependent) fMRI dataset that addresses the reproducibility concerns of the established protocols for fMRI preprocessing. Based on standardizations of the input and output data specifications, fMRIPrep is capable of preprocessing a diversity of datasets without manual intervention. In support of the growing popularity of fMRIPrep, this protocol describes how to integrate the tool in a task-based fMRI investigation workflow.},
+	URL = {https://www.biorxiv.org/content/early/2019/07/08/694364},
+	eprint = {https://www.biorxiv.org/content/early/2019/07/08/694364.full.pdf},
+	journal = {bioRxiv}
+}
+
+
+@article{Yarkoni2019,
+  title={{PyBIDS}: Python tools for {BIDS} datasets},
+  author={Yarkoni, Tal and
+          Markiewicz, Christopher J and
+          {de la Vega}, Alejandro and
+          Gorgolewski, Krzysztof J and
+          Salo, Taylor and
+          Halchenko, Yarik and
+          McNamara, Quinten and
+          DeStasio, Krista and
+          Poline, Jean-Baptiste and
+          Petrov, Dmitry and
+          Hayot-Sasson, Val\'erie and
+          Nielson, Dylan M and
+          Carlin, Johan and
+          Kiar, Greg and
+          Whitaker, Kirstie and
+          DuPre, Elizabeth and
+          Wagner, Adina and
+          Tirrell, Lee and
+          Jas, Mainak and
+          Hanke, Michael and
+          Poldrack, Russell A and
+          Esteban, Oscar and
+          Appelhoff, Stefan and
+          Holdgraf, Chris and
+          Staden, Isla and
+          Thirion, Bertrand and
+          Kleinschmidt, Dave F and
+          Lee, John A and
+          {Visconti di Oleggio Castello}, Matteo and
+          Notter, Michael P and
+          Blair, Ross},
+  year={2019},
+  month=aug,
+  type = {JOUR},
+  journal={Journal of Open Source Software},
+  publisher = {The Open Journal},
+  volume = {4},
+  number = {40},
+  pages = {1294},
+  doi={10.21105/joss.01294},
+}
+
+
+@article{Poldrack2019,
  title={The importance of standards for sharing of computational models and data},
- DOI={10.31234/osf.io/q3rnx},
- publisher={PsyArXiv},
  author={Poldrack, Russell and
          Feingold, Franklin and
          Frank, Michael J and
@@ -210,8 +338,62 @@
          Zhan, Ming and
          Cohen, Jonathan D},
  year={2019},
- month={May}
+ month=dec,
+ type = {JOUR},
+ journal={Computational Brain \& Behavior},
+ volume = {2},
+ number = {3-4},
+ pages={229},
+ doi={10.1007/s42113-019-00062-x},
+ note = {Preprint: \doi{10.31234/osf.io/q3rnx}}
 }
+
+@presentation{Markiewicz2019a,
+    author = {Christopher J. Markiewicz},
+    title = {FitLins - Reproducible model estimation for fMRI},
+    year = {2019},
+    month = jun,
+    type = {Software demonstration},
+    organization = {Organization for Human Brain Mapping Annual Meeting},
+    address = {Rome},
+}
+
+
+@presentation{Markiewicz2019poster,
+    author = {Markiewicz, Christopher J and
+              {de la Vega}, Alejandro and
+              Yarkoni, Tal and
+              Poldrack, Russell A and
+              Gorgolewski, Krzysztof J},
+    title = {FitLins - Reproducible model estimation for fMRI},
+    year = {2019},
+    month = jun,
+    type = {poster},
+    organization = {Organization for Human Brain Mapping Annual Meeting},
+    address = {Rome},
+}
+
+
+@presentation{Markiewicz2019b,
+    author = {Christopher J. Markiewicz},
+    title = {fMRIPrep: A Robust fMRI Preprocessing Pipeline},
+    year = {2019},
+    month = oct,
+    type = {oral},
+    organization = {Athinoula A. Martinos Center for Biomedical Imaging},
+    address = {Boston, MA},
+}
+
+@presentation{Markiewicz2019c,
+    author = {Christopher J. Markiewicz},
+    title = {BIDS: The Brain Imaging Data Structure},
+    year = {2019},
+    month = oct,
+    type = {oral},
+    organization = {Athinoula A. Martinos Center for Biomedical Imaging},
+    address = {Boston, MA},
+}
+
 
 @misc{philips-cdas,
     author = {Christopher J. Markiewicz},
