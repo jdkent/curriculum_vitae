@@ -1538,7 +1538,7 @@ FUNCTION {begin.bib}
   write$ newline$
   "  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else"
   write$ newline$
-  "  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup \urlstyle{rm}\Url}\fi"
+  "  \providecommand{\doi}[1]{doi:\href{https://doi.org/#1}{#1}}"
   write$ newline$
 }
 EXECUTE {begin.bib}
