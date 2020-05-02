@@ -10,7 +10,8 @@
 
 \usepackage{footmisc}
 \usepackage{multibib}
-\newcites{pr,post,talk,code}{Peer Reviewed Journals,%
+\newcites{pr,pp,post,talk,code}{Peer Reviewed Journals,%
+    Preprints,%
     Poster Presentations,%
     Talks,%
     Contributions to Open Source Scientific Software}
@@ -30,7 +31,7 @@
 \section{Education}
 \cventry{2014 -- }{PhD. Neuroscience}%
     {University of Iowa}{Iowa City, IA}{}%
-    {\underline{Research Focus}: Neural basis of cognitive control.\\
+    {\underline{Research Focus}: fMRI Methods/Reproducible Research\\
      \underline{Advisor}: Dr. Michelle W. Voss}
 \cventry{2014}{B.A. \underline{Major}: Psychology \& \underline{Concentration}: Neuroscience}{Grinnell College}{Grinnell, IA}{}{}
 
@@ -67,24 +68,36 @@
 \cvline{Competent}{R}
 \cvline{Familiar}{MATLAB, \LaTeX}
 
+\section{Hackathons}
+\cventry{2020}{Computational Psychiatry Hackathon}{University of Iowa}{Iowa City}{Iowa}%
+{Predicted bipolar diagnosis using brain measures}
+\cventry{2019}{OHBM Hackathon}{Rome}{Italy}{}{}
+\cventry{2019}{Coastal Coding}{Florida International University}{Miami}{Florida}%
+{\href{https://github.com/neurostuff/NiMARE} {\color{blue}{Development of meta-analysis package NiMARE}}}
+\cventry{2019}{ABCD Neurocognitive Prediction Challenge}{}{}{}%
+{\href{https://sibis.sri.com/abcd-np-challenge/} {\color{blue}{Predicted fluid intelligence from T1w images}}}
+\cventry{2018}{HACKUIOWA}{University of Iowa}{Iowa City}{Iowa}%
+{\href{https://github.com/jdkent/2018_hackathon_scikit_open} {\color{blue}{Predicted behavioral outcomes from lesions}}}
 
 \section{Training}
+\cventry{2020}{TILE (transform, interact, learn, engage) Classroom Training}{University of Iowa}{Iowa City}{Iowa}{}
 \cventry{2020}{Certified Instructor}{Software Carpentry}{}{}{}
-\cventry{2019}{OHBM Hackathon}{Rome}{Italy}{}{}
-\cventry{2019}{Coastal Coding}{Florida International University}{Miami}{Florida}{}
 \cventry{2018 - 2020}{\href{https://jdkent.github.io/WIN/} {\color{blue}{Writing in the Neurosciences}}}{University of Iowa}{Iowa City}{Iowa}%
 {Monthly lecture and workshop on writing samples, giving and recieving peer review}
 \cventry{2018 -- }{Teaching Club}{University of Iowa}{Iowa City}{Iowa}{Bi-weekly meetings about teaching strategies in the classroom}
 \cventry{2018}{Neurohackademy}{University of Washington}{Seattle}{Washington}{}
 \cventry{2017}{Code Sprint}{Stanford University}{Stanford}{California}{}
 
-\nocitepr{DuBose2017,Esteban2019,Lee2019,Kent2019d,Esteban2020}
+\nocitepr{DuBose2017,Esteban2019,Lee2019,Kent2019d}
+\nocitepp{Esteban2020}
 \nocitepost{Kent2016a,Kent2019a,Kent2019b,Kent2019c}
 \nocitetalk{Kent2013,Kent2015b,Kent2015a,Kent2016b,Kent2017,Kent2018}
 \nocitecode{esteban_oscar_2018_1156273,gorgolewski_krzysztof_j_2018_1160610,kent_james_d_2019_2552303}
 \section{Publications}
 \bibliographystylepr{cvbib}
 \bibliographypr{self}
+\bibliographystylepp{cvbib}
+\bibliographypp{self}
 \section{Presentations}
 \bibliographystyletalk{cvbib}
 \bibliographytalk{self}
